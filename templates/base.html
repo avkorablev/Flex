@@ -178,6 +178,10 @@
     </footer>
   </main>
 
+  {% if YANDEX_METRIKA %}
+    {% include "partial/metrika.html" %}
+  {% endif %}
+
   {% if GUAGES %}
     {% include "partial/guages.html" %}
   {% endif %}

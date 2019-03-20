@@ -29,6 +29,12 @@
     </p>
   </header>
 
+  <div>
+    {% if  article.image %}
+      <img src="{{ article.image }}">
+    {% endif %}
+  </div>
+
   {% if GOOGLE_ADSENSE and GOOGLE_ADSENSE.ads.article_top %}
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <ins class="adsbygoogle ads-responsive"
